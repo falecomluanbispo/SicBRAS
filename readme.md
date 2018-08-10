@@ -1,8 +1,8 @@
-<p align="center">![][http://1.bp.blogspot.com/_YMjrin1Fa20/Szrj3PPI3nI/AAAAAAAAADY/fWuFnhJ1Jn0/s320/sicbras.jpg "SiCBRAS"]</p>
+<p align="center"><img src="http://1.bp.blogspot.com/_YMjrin1Fa20/Szrj3PPI3nI/AAAAAAAAADY/fWuFnhJ1Jn0/s320/sicbras.jpg"></p>
 
-1. [Configurações do Projeto][#1-configuracoes-do-projeto]
-2. [Organização do Projeto][#2-organizacao-do-projeto]
-3. [Orientações sobre o Versionamento][#3-orientacoes-sobre-o-versionamento]
+1. [Configurações do Projeto](#1-configuracoes-do-projeto)
+2. [Organização do Projeto](#2-organizacao-do-projeto)
+3. [Orientações sobre o Versionamento](#3-orientacoes-sobre-o-versionamento)
 
 # 1. Configurações do Projeto
 ## Pré-Requisitos
