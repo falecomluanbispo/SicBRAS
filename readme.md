@@ -6,7 +6,7 @@
 
 # 1. Configurações do Projeto
 ## Pré-Requisitos
-- PHP $\geq$ 7.1.3
+- PHP >= 7.1.3
 - Composer
 - Git
 - MySQL (Pode ser XAMPP, LAMP, etc)
