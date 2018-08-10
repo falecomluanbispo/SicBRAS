@@ -1,6 +1,10 @@
-<p align="center">![SiCBRAS]["http://1.bp.blogspot.com/_YMjrin1Fa20/Szrj3PPI3nI/AAAAAAAAADY/fWuFnhJ1Jn0/s320/sicbras.jpg"]</p>
+<p align="center">![][http://1.bp.blogspot.com/_YMjrin1Fa20/Szrj3PPI3nI/AAAAAAAAADY/fWuFnhJ1Jn0/s320/sicbras.jpg "SiCBRAS"]</p>
 
-# Configurações do Projeto
+1. [Configurações do Projeto][#1-configuracoes-do-projeto]
+2. [Organização do Projeto][#2-organizacao-do-projeto]
+3. [Orientações sobre o Versionamento][#3-orientacoes-sobre-o-versionamento]
+
+# 1. Configurações do Projeto
 ## Pré-Requisitos
 - PHP $\geq$ 7.1.3
 - Composer
@@ -22,14 +26,14 @@
 3. Execute o comando `php artisan serve`. Esse último comando sempre precisará ser executado para abrir a conexão.
 4. Estarte o banco de dados, caso não esteja. Se o banco de dados não estiver estartado, o acesso ao sistema interno não ocorrerá. 
 
-# Organização do Projeto
+# 2. Organização do Projeto
 - Cada módulo tem uma pasta própria para as Views `( resources-> views )`. 
 - Cada módulo tem uma pasta própria para os Controllers `( app-> Http-> Controllers )`.
 - Cada módulo tem uma pasta própria para as Models `( app-> Models )`.
 - Cada módulo tem uma parte própria pra colocar as rotas `( routes )` dentro de "web.php".
 - A página do menu está em `config-> adminlte.php`. Cada equipe irá gerenciar os subitens do seu módulo.
 
-# Orientações sobre o Versionamento
+# 3. Orientações sobre o Versionamento
 - Sempre que fizer alguma alteração no projeto, você precisa commitar e enviar para o seu repositório local e depois enviar um Pull Request para esse repositório aqui, para que todos tenham um único repositório (esse aqui) com as atualizações mais recentes. Para saber como proceder, [clique aqui](https://blog.da2k.com.br/2015/02/04/git-e-github-do-clone-ao-pull-request/). Mas antes disso, você precisa atualizar seu repositório com as atualizações desse repositório aqui (caso hajam), pois se outra pessoa tiver editado o mesmo arquivo que você, o pull não poderá ser efetuado. Para saber como sempre deixar seu repositório com as atualizações desse aqui, [clique aqui](https://gist.github.com/rdeavila/9618969);
 - Mantenha o projeto o mais organizado possível; 
 - Sempre que for criar algum arquivo para seu módulo, organize-o dentro das próprias pastas de cada módulo. Caso não haja a pasta, crie uma;
