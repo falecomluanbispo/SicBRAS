@@ -1,60 +1,36 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center">![SiCBRAS]["http://1.bp.blogspot.com/_YMjrin1Fa20/Szrj3PPI3nI/AAAAAAAAADY/fWuFnhJ1Jn0/s320/sicbras.jpg"]</p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# Configurações do Projeto
+## Pré-Requisitos
+- PHP $\geq$ 7.1.3
+- Composer
+- Git
+- MySQL (Pode ser XAMPP, LAMP, etc)
 
-## About Laravel
+## Baixando o projeto
+1. Forke este repositório para a sua conta no GitHub;
+2. Clone o repositório forkado para a sua máquina. Caso não saiba muito bem como usar o Git, [clique aqui](https://blog.dmatoso.com/usando-git-e-github-no-windows-a059c791c0af).
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Banco de Dados
+1. Crie um banco de dados do tipo "utf8mb4_general_ci";
+2. Vá na pasta do projeto e renomeie o arquivo ".env.example" para ".env";
+3. Configure o arquivo ".env" com as suas configurações de banco de dados. A maioria provavelmente só vai precisar configurar o nome do banco, do usuário e a senha.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Rodando o Projeto
+1. No terminal do computador, vá até a pasta do projeto e execute `composer install`;
+2. Ainda no terminal, execute o comando `php artisan migrate`;
+3. Execute o comando `php artisan serve`. Esse último comando sempre precisará ser executado para abrir a conexão.
+4. Estarte o banco de dados, caso não esteja. Se o banco de dados não estiver estartado, o acesso ao sistema interno não ocorrerá. 
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+# Organização do Projeto
+- Cada módulo tem uma pasta própria para as Views `( resources-> views )`. 
+- Cada módulo tem uma pasta própria para os Controllers `( app-> Http-> Controllers )`.
+- Cada módulo tem uma pasta própria para as Models `( app-> Models )`.
+- Cada módulo tem uma parte própria pra colocar as rotas `( routes )` dentro de "web.php".
+- A página do menu está em `config-> adminlte.php`. Cada equipe irá gerenciar os subitens do seu módulo.
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Orientações sobre o Versionamento
+- Sempre que fizer alguma alteração no projeto, você precisa commitar e enviar para o seu repositório local e depois enviar um Pull Request para esse repositório aqui, para que todos tenham um único repositório (esse aqui) com as atualizações mais recentes. Para saber como proceder, [clique aqui](https://blog.da2k.com.br/2015/02/04/git-e-github-do-clone-ao-pull-request/). Mas antes disso, você precisa atualizar seu repositório com as atualizações desse repositório aqui (caso hajam), pois se outra pessoa tiver editado o mesmo arquivo que você, o pull não poderá ser efetuado. Para saber como sempre deixar seu repositório com as atualizações desse aqui, [clique aqui](https://gist.github.com/rdeavila/9618969);
+- Mantenha o projeto o mais organizado possível; 
+- Sempre que for criar algum arquivo para seu módulo, organize-o dentro das próprias pastas de cada módulo. Caso não haja a pasta, crie uma;
+- Havendo qualquer intenção de mudança estrutural no projeto de modo que possa impactar nos outros módulos, a solicitação deve ser conversada antes com a equipe de Integração ou bem justificada no Pull Request, de modo a ser repassada posteriormente para as outras equipes.
