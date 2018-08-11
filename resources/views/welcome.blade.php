@@ -28,10 +28,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img src="img/sicbras.jpg">
+                    <img class="imgHome" src="img/sicbras.jpg">
 
                 </div>
-                <h1>Seja bem vindo ao sistema SiCBRAS</h1>
+                <h3>Seja Bem-vindo ao Sistema SiCBRAS</h3>
  
             </div>
         </div>

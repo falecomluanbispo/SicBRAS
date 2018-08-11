@@ -1,0 +1,18 @@
+body{
+	background-color: white !important;
+	overflow-y:hidden;
+}
+input:focus{
+	border-color:#007a64;
+}
+.sic{
+	background-color: #007a64;
+	border: 2px solid #007a64;
+	color:white !important;
+}
+.sic:hover{
+	background-color:white;
+	border: 2px solid #007a64;
+	color: #007a64;
+	transition: 0.4s;
+}

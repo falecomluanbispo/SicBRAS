@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b style="color:#0A7666;font-size:18px;background-color:white">SiC</b><b style="color:#C7C9C8;font-size:18px;background-color:white">BRAS</b>',
+    'logo' => '<b>SiCBRAS</b>',
 
-    'logo_mini' => '<b style="color:#0A7666;font-size:18px;background-color:white">S</b><b style="color:#C7C9C8;font-size:18px;background-color:white">B</b>',
+    'logo_mini' => 'SB',
 
     /*
     |--------------------------------------------------------------------------
