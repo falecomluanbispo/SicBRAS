@@ -21,14 +21,13 @@
                         <a href="{{ url('/home') }}">Página inicial</a>
                     @else
                         <a href="{{ route('login') }}">Acessar sistema</a>
-                        <a href="{{ route('register') }}">Registrar</a>
                     @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    <img class="imgHome" src="img/sicbras.jpg">
+                    <img class="imgHome" src="img/sicbrasReal.png">
 
                 </div>
                 <h3>Seja Bem-vindo ao Sistema SiCBRAS</h3>
