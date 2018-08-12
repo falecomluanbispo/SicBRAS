@@ -12,7 +12,7 @@
 @section('body')
     <div class="login-box">
         <div class="login-logo">
-            <img src="img/sicbras.jpg">
+            <img src="img/sicbrasReal.png" style="width:320px">
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
@@ -23,7 +23,7 @@
                 <div class="form-group has-feedback {{ $errors->has('email') ? 'has-error' : '' }}">
                     <input type="email" name="email" class="form-control" value="{{ old('email') }}"
                            placeholder="Matricula">
-                    <span class="glyphicon glyphicon-envelope form-control-feedback sic"></span>
+                    <span class="glyphicon glyphicon-user form-control-feedback sic"></span>
                     @if ($errors->has('email'))
                         <span class="help-block">
                             <strong>{{ $errors->first('email') }}</strong>
