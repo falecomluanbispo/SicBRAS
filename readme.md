@@ -1,4 +1,4 @@
-<p align="center"><img src="http://1.bp.blogspot.com/_YMjrin1Fa20/Szrj3PPI3nI/AAAAAAAAADY/fWuFnhJ1Jn0/s320/sicbras.jpg"></p>
+﻿<p align="center"><img src="http://1.bp.blogspot.com/_YMjrin1Fa20/Szrj3PPI3nI/AAAAAAAAADY/fWuFnhJ1Jn0/s320/sicbras.jpg"></p>
 
 1. [Configurações do Projeto](#1-configurações-do-projeto)
 2. [Organização do Projeto](#2-organização-do-projeto)
@@ -17,7 +17,7 @@
 
 ## Banco de Dados
 1. Crie um banco de dados do tipo "utf8mb4_general_ci";
-2. Vá na pasta do projeto e renomeie o arquivo ".env.example" para ".env";
+2. Vá na pasta do projeto, duplique o arquivo ".env.example" e renomeie o arquivo duplicado para ".env";
 3. Configure o arquivo ".env" com as suas configurações de banco de dados. A maioria provavelmente só vai precisar configurar o nome do banco, do usuário e a senha.
 
 ## Rodando o Projeto
