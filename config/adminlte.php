@@ -120,8 +120,122 @@ return [
       ],
       [
           'text'        => 'Controle de Treinamento',
-          'url'         => 'treinamento',
           'icon'        => 'edit',
+          /*'url'         => 'treinamento',*/
+          'submenu'     => [
+            [
+                'text'  => 'Matriz de Treinamento',
+                'icon'  => 'bank',
+                'url'   => 'treinamento',
+            ],
+            [
+                'text'  => 'Cadastrar ',
+                'icon'  => 'calendar-plus-o',
+                'url'   => '#',
+                'submenu'   => [
+                    [
+                    'text'  => 'Treinamento',
+                    'url'   => 'cadtreinamento',
+                    ],
+                    [
+                    'text'  => 'Turma',
+                    'url'   => 'cadturma',
+                    ],
+                    [
+                    'text'  => 'Funcionario',
+                    'url'   => 'cadfuncionario',
+                    ],
+                    [
+                    'text'  => 'Cargo',
+                    'url'   => 'cadcargo',
+                    ],
+                    [
+                    'text'  => 'Setor',
+                    'url'   => 'cadsetor',
+                    ],
+                    [
+                    'text'  => 'Departamento',
+                    'url'   => 'caddepartamento',
+                    ],
+
+                ],
+            ],
+            [
+                'text'  => 'Consultar',
+                'icon'  => 'calendar',
+                'url'   => '#',
+                'submenu'   => [
+                    [
+                    'text'  => 'Treinamento',
+                    'url'   => 'contreinamento',
+                    ],
+                    [
+                    'text'  => 'Turma',
+                    'url'   => 'conturma',
+                    ],
+                    [
+                    'text'  => 'Funcionario',
+                    'url'   => 'confuncionario',
+                    ],
+                    [
+                    'text'  => 'Cargo',
+                    'url'   => 'concargo',
+                    ],
+                    [
+                    'text'  => 'Setor',
+                    'url'   => 'consetor',
+                    ],
+                    [
+                    'text'  => 'Departamento',
+                    'url'   => 'condepartamento',
+                    ],
+
+                ],
+            ],
+            [
+                'text'  => 'Relatorios',
+                'icon'  => 'calendar-check-o',
+                'url'   => '#',
+                'submenu'   => [
+                    [
+                    'text'  => 'Treinamentos',
+                    'url'   => 'reltreinamento',
+                    ],
+                    [
+                    'text'  => 'Turma',
+                    'url'   => 'relturma',
+                    ],
+                    [
+                    'text'  => 'Funcionario',
+                    'url'   => 'relfuncionario',
+                    ],
+                    [
+                    'text'  => 'Cargo',
+                    'url'   => 'relcargo',
+                    ],
+                    [
+                    'text'  => 'Setor',
+                    'url'   => 'relsetor',
+                    ],
+                    [
+                    'text'  => 'Departamento',
+                    'url'   => 'reldepartamento',
+                    ],
+
+                ],
+            ],
+            [
+                'text'  => 'Gerenciador de Arquivos',
+                'icon'  => 'paste',
+                'url'   => 'gerenciador',
+            ],
+            [
+                'text'  => 'Ajuda',
+                'icon'  => 'exclamation-circle',
+                'url'   => 'help',
+
+            ],
+          ],
       ],
       [
           'text'        => 'Controle de Qualidade',
